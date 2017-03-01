@@ -7,6 +7,7 @@ def number_of_customers_per_state(customers):
     This function receives a dictionary containing states (as keys) and
     customers for those states (as a list of dictionaries) and should
     return a final dictionary containing the count of customers per state.
+    
 
     customers = {
         'UT': [{
@@ -29,6 +30,17 @@ def number_of_customers_per_state(customers):
     }
     """
     # Write your code here
+    a_dict = {}
+    For key,vlaue in customers:
+        if not key in a_dict:
+            a_dict[state] = 0
+        for person in value
+            a_dict[state] +=1
+    return a_dict
+            
+    
+        
+        
     pass
 
 
