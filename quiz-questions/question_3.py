@@ -39,6 +39,17 @@ def eldest_customer_per_state(customers):
     }
     """
     # Write your code here
+    a_dict = {}
+    For key,vlaue in customers:
+        if not key in a_dict:
+            a_dict[key] = None
+        for person in value:
+            if a_dict[key] == None:
+                a_dict[key] == person
+            elif person['age'] > a_dict[key]['age']:
+                a_dict[key] = person
+              
+    return a_dict
     pass
 
 
